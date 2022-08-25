@@ -4,7 +4,7 @@
 
 int main(int argc, char* argv[])
 {
-	auto argparse = new ArgumentParser(argv, argc);
+	auto argparse = new ArgumentParser(argv, argc); // or ArgumentParser argparse(argv, argc);
 
 	bool testa = argparse->checkArg("--test");
 	auto test = argparse->getArgInput("--test");
